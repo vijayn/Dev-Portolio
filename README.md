@@ -1,24 +1,10 @@
 # Developer Portfolio Application
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+ > This is a Rails 5.x application that allow developers to create their own portfolio.
 
-Things you may want to cover:
+### Features
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+ - Real time commenting
+ - Blog
+ - Portfolios
+ - Drag and Drop portfolio interface
