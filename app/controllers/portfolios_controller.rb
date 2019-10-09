@@ -28,7 +28,7 @@ class PortfoliosController < ApplicationController
 
     respond_to do |format|
       if @portfolio_item.update(params.require(:portfolio).permit(:title, :subtitle, :body))
-        format.html { redirect_to portfolios_path, notice: 'Your portfolio was updated'}
+        format.html { redirect_to portfolios_url, notice: 'Your portfolio was updated'}
       else
         format.html {render :edit}
       end
@@ -37,6 +37,14 @@ class PortfoliosController < ApplicationController
 
   def show
     @portfolio_item = Portfolio.find(params[:id])
+  end
+
+  def destroy
+    @portfolio_item = Portfolio.find(params[:id])
+    @portfolio_item.destroy
+    respond_to do |format|
+      format.html {redirect_to portfolios_url, notice: 'Portfolio is deleted succesfully'}
+    end
   end
 
 end
