@@ -3,6 +3,10 @@ class PortfoliosController < ApplicationController
     @portfolios_items = Portfolio.all
   end
 
+  def react
+    @react_portfolio_items = Portfolio.react
+  end
+
   def new
     @portfolio_item = Portfolio.new
   end
