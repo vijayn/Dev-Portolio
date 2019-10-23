@@ -1,8 +1,9 @@
-<h1>Home Page</h1>
+<h1>Hi <%= current_user.first_name.capitalize if current_user %> ,It's your Home Page</h1>
 <p>Find me in app/views/pages/home.html.erb</p>
+
 
 <h1>Blog Posts</h1>
 <%= @posts.inspect %>
 
-<h2> Skills </h1>
+<h2> Skills </h2>
 <%= @skills.inspect %>
